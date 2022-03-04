@@ -1,0 +1,215 @@
+/*Estilos globales*/
+img{
+    max-width: 100%;
+}
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body{
+    background-color: aliceblue;
+}
+/* temporales */
+.hidden{
+    display: none;
+}
+/* HEADER */
+.navegacion{
+    height: 4rem;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    padding: .5rem .8rem;
+    align-items: center;
+    border-bottom: solid 1px #e4e4e4;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+.navegacion > a,
+.navegacion > div > a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+    font-family: 'Cedarville Cursive', cursive;
+}
+.buscador{
+    display: none;
+}
+.iconos a{
+    display: none;
+}
+.iconos a:first-of-type{
+    display: block;
+}
+@media (min-width: 800px){
+    .iconos a{
+        display: inline-block;
+    }
+    .iconos a:first-of-type{
+        display: inline-block;
+    }
+    .iconos{
+        display: flex;
+        justify-content: space-around;
+        width: 200px;
+    }
+    .iconos > a > i{
+        font-size: 1.5rem;
+    }
+    .buscador{
+        display: block;
+    }
+    .navegacion{
+        padding: 0 15%;
+    }
+    .navegacion > a:first-of-type{
+        display: none
+    }
+}
+/* main */
+main{
+    padding-top: 4rem;
+}
+.div-historias > ul{
+    list-style: none;
+}
+.div-historias{
+    background-color: white;
+    border-radius: 8px;
+    border: 1px solid #e4e4e4;
+}
+.div-historias > ul{
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding:.8rem 1rem;
+}
+.div-historias > ul > li > img{
+    height: 3.5rem;
+    width: 3.5rem;
+    border-radius: 50%;
+    padding: 2px;
+    background-image: radial-gradient(circle at 72.55% 27.45%, #00b2ff 0, #00aeff 4.55%, #00aaff 9.09%, #00a4ff 13.64%, #009dff 18.18%, #0094ff 22.73%, #348bff 27.27%, #7f80ff 31.82%, #aa74ff 36.36%, #ca67ff 40.91%, #e457ff 45.45%, #f946f3 50%, #ff32df 54.55%, #ff16ca 59.09%, #ff00b5 63.64%, #ff009f 68.18%, #ff008a 72.73%, #ff0075 77.27%, #ff0060 81.82%, #ff264b 86.36%, #ff3b35 90.91%, #ff4d1c 95.45%, #ff5c00 100%);
+}
+.div-historias > ul > li > h4{
+    margin: 0;
+    font-size: .7rem;
+    text-align: center;
+}
+@media (min-width: 800px){
+    main{
+        padding-top: 6rem;
+        margin: 0 auto;
+        width: 70%;
+    }
+    .seccion-main > div > ul{
+        padding:.8rem 1.5rem;
+    }
+}
+/* Publicaciones */
+.publicaciones{
+    height: auto;
+    padding: 1rem 0; 
+    background-color: white;
+    margin-top: 1rem;
+}
+.publicaciones > .cabecera-publicacion{
+    height: 10%;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 1rem 2rem 1rem;
+    align-items: center;
+}
+.publicaciones > .cabecera-publicacion > div > img{
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+}
+.publicaciones > .cabecera-publicacion > div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.publicaciones > .cabecera-publicacion > div > h2{
+    margin: 0;
+    font-size: .8rem;
+    padding-left: .8rem;
+    font-family: 'Cedarville Cursive', cursive;
+}
+.footer-publicaciones{
+    background-color: white;
+}
+.publicaciones > img {
+    border: 1px solid #e4e4e4;
+    margin: 0;
+}
+.footer-publicaciones > .reacciones{
+    display: flex;
+    justify-content: space-between;
+    padding:.3rem 1rem;
+}
+.footer-publicaciones > .reacciones > div > a,
+.footer-publicaciones > .reacciones > i{
+    text-decoration: none;
+    padding: 0 .3rem;
+}
+.footer-publicaciones > .reacciones{
+    padding-top: .5rem;
+}
+.p-publicacion{
+    margin: 0;
+    text-align: justify;
+    padding: .5rem 1.5rem .5rem 1.5rem;
+}
+.aside{
+    display: none;
+    width: 70%;
+    padding: 0 0 0 2rem;
+}
+.aside div{
+    position: fixed;
+    max-width: 15%;
+}
+.aside > div > p{
+    text-align: justify;
+}
+@media (min-width: 800px){
+    .aside{
+        display: block;
+    }
+    .main{
+        display: flex;
+        justify-content: space-between;
+    }
+    .publicaciones{
+        margin-top: 2rem;
+    }
+    .publicaciones > .cabecera-publicacion{
+        padding: 0 1rem 1rem 1rem;
+    }
+}
+/*Footer*/
+.footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+.footer .iconos-f{
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+    padding: 1rem 0;
+}
+.footer .iconos-f a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+}
+@media (min-width: 800px){
+    .footer{
+        display: none;
+    }
+}
