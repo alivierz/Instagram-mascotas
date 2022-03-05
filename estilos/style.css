@@ -155,7 +155,9 @@ main{
 .footer-publicaciones > .reacciones > i{
     text-decoration: none;
     padding: 0 .3rem;
+    color: black;
 }
+
 .footer-publicaciones > .reacciones{
     padding-top: .5rem;
 }
